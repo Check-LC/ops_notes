@@ -1,6 +1,6 @@
 * [README](README.md)
 * [Tips](tips/README.md)
-  * [使用技巧](tips/shi-yong-ji-qiao.md)
+  * [Tips](tips/section1.md)
 * [Hardware](hardware/README.md)
   * [DELL wyse3040](hardware/section1.md)
   * [MAC Mini With T2](hardware/section2.md)
