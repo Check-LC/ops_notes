@@ -10,7 +10,7 @@
 4. 安装过程
     - F12进入BIOS，选择U盘引导,ENTER  
   
-     ![|1000](attachments/02_uefi_usbdriver.png)
+    ![](attachments/02_uefi_usbdriver.png){width=1000}
     - try and install ubuntu,ENTER  
   
     ![|1000](attachments/03_GRUB%20install.png)
