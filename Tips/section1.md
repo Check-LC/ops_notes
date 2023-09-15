@@ -32,8 +32,8 @@ sudo -i 重新登录使生效
 su - inboc
 ```
 
-5 . 向一个没有网络的机器安装某个包，解决其安装和相关依赖的办法 \n
-apt-redepends 可以下载软件包和相关依赖用于离线安装 \n
+5 . 向一个没有网络的机器安装某个包，解决其安装和相关依赖的办法  
+apt-redepends 可以下载软件包和相关依赖用于离线安装  
 [apt-rdepends忽略部分包的方法](https://superuser.com/questions/1112525/ignore-apt-get-download-errors/1137335#1137335)
 
 6 . linux 对容器抓包
