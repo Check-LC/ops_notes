@@ -49,8 +49,8 @@ sudo apt-get install -y apache2  nfs-kernel-server isc-dhcp-server tftpd-hpa
 
 
 #### 2 . DHCP服务排错
-	2.1  机器联入局域网，在办公司交换机直连后成功
-	2.2  windows系统请求时，dhcp服务正常日志（作为参考的对照）
+2.1  机器联入局域网，在办公司交换机直连后成功
+2.2  windows系统请求时，dhcp服务正常日志（作为参考的对照）
 ```
 Jun 19 16:05:38 inboc-sys-lc dhcpd[1517378]: DHCPDISCOVER from 58:11:22:bd:27:35 via enp7s0
 Jun 19 16:05:38 inboc-sys-lc dhcpd[1517378]: DHCPOFFER on 10.10.6.3 to 58:11:22:bd:27:35 (PC-202306051659) via enp7s0
@@ -58,32 +58,31 @@ Jun 19 16:05:38 inboc-sys-lc dhcpd[1517378]: DHCPREQUEST for 10.10.6.3 (10.10.6.
 Jun 19 16:05:38 inboc-sys-lc dhcpd[1517378]: DHCPACK on 10.10.6.3 to 58:11:22:bd:27:35 (PC-202306051659) via enp7s0
 ```
 
-	错误：pxe启动  dhcp--没有request请求，客户端输出 PXE-E16 NO valid offer recieved
-	***原因：主板PXE设置不正确，需要全设置为仅uefi  或者  仅legacy***
+错误：pxe启动  dhcp--没有request请求，客户端输出 PXE-E16 NO valid offer recieved
+***原因：主板PXE设置不正确，需要全设置为仅uefi  或者  仅legacy***
 ```
 Jun 19 16:19:26 inboc-sys-lc dhcpd[1517378]: DHCPDISCOVER from 58:11:22:bd:27:35 via enp7s0
 Jun 19 16:19:27 inboc-sys-lc dhcpd[1517378]: DHCPOFFER on 10.10.6.4 to 58:11:22:bd:27:35 via enp7s0
 ```
 
 #### 3. TFTP 服务排错
-	3.1
+3.1 std error out
+```
 PXE-T02：only absolute filenames allowed
 PXE-E3C: TFTP error – Access violation
 pxe tftp open time out
 ```
 配置文件添加
+```
 FTP_OPTIONS="--secure"
 RUN_DAEMON="yes"
 ```
-
-	 3.2
+3.2 此输出不影响过程，可以忽略，实际可以读取到
+```
  tftp: client does not accept options
  pxe file 0 bytes
 ```
-不影响过程，可以忽略，实际可以读取到
-```
-
-2 . 准备系统加载程序
+3.3 准备系统加载程序
 ```
 cd PXE/syslinux/
 wget -c https://mirrors.edge.kernel.org/pub/linux/utils/boot/syslinux/syslinux-6.03.zip
@@ -130,7 +129,7 @@ cat /etc/default/tftpd-hpa
 	RUN_DAEMON="yes"
 
 systemctl restart tftpd-hpa
-检查：可以找一个客户端执行 tftp server_ip get file，查看是否下载
+检查：可以找一个客户端执行 tftp server_ip  &&  get file，查看是否下载
 ```
 
 5.2 目录结构
@@ -149,8 +148,8 @@ systemctl restart tftpd-hpa
 └── vesamenu.c32    #提供了一个图形化的菜单界面，方便用户选择启动菜单中的操作系统或其他选项
 ```
 
-	5.3 以上文件来源
-		5.3.1
+5.3 以上文件来源
+5.3.1
 ```
 wget  https://mirrors.edge.kernel.org/pub/linux/utils/boot/syslinux/syslinux-6.03.tar.gz
 解压、查找、拷贝，./bios目录下的以下文件，在本方案有效
@@ -161,7 +160,7 @@ wget  https://mirrors.edge.kernel.org/pub/linux/utils/boot/syslinux/syslinux-6.0
 4. libutil.c32 - PXE实用工具库
 ```
 
-		5.3.2 后台下载，任意路径
+5.3.2 后台下载，任意路径
 ```
 wget https://releases.ubuntu.com/22.04.2/ubuntu-22.04.2-desktop-amd64.iso & 
 sudo mount ./ubuntu-22.04.2-desktop-amd64.iso   /path/nfs
@@ -170,7 +169,7 @@ cp /path/nfs/casper/initrd   /path/tftp/casper
 cp /path/nfs/casper/vmlinuz  /path/tftp/casper
 ```
 
-		5.3.3 pxelinux.cfg/default
+5.3.3 pxelinux.cfg/default
 ```
 default vesamenu.c32
 prompt 0
@@ -189,7 +188,7 @@ label auto
 
 ```
 #### 6. NFS配置
-	6.1 目录结构
+6.1 目录结构
 ```
 /path/nfs
 ├── boot
@@ -204,7 +203,7 @@ label auto
 └── preseed
 ```
 
-	6.2 内容准备
+6.2 内容准备
 ```
 sudo mount ./ubuntu-22.04.2-desktop-amd64.iso   /path/nfs
 或者
@@ -213,13 +212,13 @@ sudo cp -r  /mnt/*  /path/nfs
 sudo cp -r  /mnt/.disk  /path/nfs
 ```
 
-	6.3  共享
+6.3  共享
 ```
 sudo vim /etc/exports
   /home/inboc/pxe/tftp/iso  10.10.6.0/24(ro,no_subtree_check)
 ```
 
-	6.4  修改配置，使支持tcp
+6.4  修改配置，使支持tcp
 ```
 sudo vim /etc/default/nfs-kernel-server
 	RPCNFSDCOUNT=8
@@ -233,13 +232,13 @@ sudo systemctl resart nfs-kernel-server
 ```
 
 #### 7. HTTP配置
-	7.1  目录结构
+7.1  目录结构
 ```
 /var/www/html/
 └── preseed.seed
 ```
 
->7.2 preseed.seed 文件
+7.2 preseed.seed 文件
 > 	[preseed 模板](https://www.debian.org/releases/stable/example-preseed.txt)
 > 	[官方autoinstall-generator介绍](https://discourse.ubuntu.com/t/autoinstall-generator-tool-to-help-with-creation-of-autoinstall-files-based-on-preseed/21334)（使用后输出报错，无解决方案）
 > 	[cloud_init文档](https://cloudinit.readthedocs.io/en/latest/index.html)
