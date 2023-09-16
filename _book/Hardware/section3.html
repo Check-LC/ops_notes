@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Hardware · GitBook</title>
+        <title>Micro Surface Pro9 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="section1.html" />
+    <link rel="next" href="section4.html" />
     
     
-    <link rel="prev" href="../Tips/section1.html" />
+    <link rel="prev" href="section2.html" />
     
 
     </head>
@@ -134,7 +134,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="./">
+        <li class="chapter " data-level="1.3" data-path="./">
             
                 <a href="./">
             
@@ -174,7 +174,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="section3.html">
+        <li class="chapter active" data-level="1.3.3" data-path="section3.html">
             
                 <a href="section3.html">
             
@@ -306,7 +306,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Hardware</a>
+        <a href=".." >Micro Surface Pro9</a>
     </h1>
 </div>
 
@@ -321,9 +321,44 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x8BB0;&#x5F55;&#x5076;&#x7136;&#x63A5;&#x89E6;&#x7684;&#x673A;&#x5668;&#x5B89;&#x88C5;&#x7CFB;&#x7EDF;&#x7684;&#x4F53;&#x9A8C;&#x3002;</p>
-<p>&#x4F7F;&#x7528;&#x6BD4;&#x8F83;&#x4FBF;&#x5229;&#x7684;U&#x76D8;&#x523B;&#x5F55;&#x7CFB;&#x7EDF;&#x7684;&#x5DE5;&#x5177; Ventoy&#x3001; Etcher&#x3002;</p>
-<p>&#x5E0C;&#x671B;&#x4EE5;&#x540E;&#x6709;&#x673A;&#x4F1A;&#x53EF;&#x4EE5;&#x6574;&#x7406;&#x66F4;&#x591A;&#x7684;&#x786C;&#x4EF6;&#x77E5;&#x8BC6;&#x8FDB;&#x5165;&#x672C;&#x7AE0;&#x3002;</p>
+                                <p>2023-08</p>
+<p>0 . <a href="https://www.youtube.com/watch?v=ZabwkpdaBK0" target="_blank">Guides</a>
+    <a href="https://www.youtube.com/watch?v=pSC2-45TQug" target="_blank">Video</a></p>
+<p>1 . &#x5F00;&#x673A;&#xFF0C;Volume up &#x952E;&#x8FDB;&#x5165; bios&#xFF0C;&#x5173;&#x95ED; Security-secure boot&#xFF0C;&#x52FE;&#x9009; boot-usb storage&#xFF0C;&#x5DE6;&#x6ED1;&#x8BE5;&#x9009;&#x9879;&#x5373;&#x53EF;&#x5F15;&#x5BFC;&#x5B89;&#x88C5;</p>
+<p>2 . Ventory GPT &#x683C;&#x5F0F;&#x5B89;&#x88C5;&#x5230; U &#x76D8;
+    &#x955C;&#x50CF;&#xFF1A;ubuntu-desktop-2204</p>
+<p>3 . &#x9700;&#x6C42;&#xFF1A;&#x89E3;&#x51B3;&#x952E;&#x76D8;&#x548C;&#x89E6;&#x6478;&#x5C4F;&#x7684;&#x95EE;&#x9898;</p>
+<p>4 . <a href="https://blog.csdn.net/yaxuan88521/article/details/128924018" target="_blank">&#x5B89;&#x88C5;&#x65B0;&#x5185;&#x6838;6.1+&#xFF0C;&#x652F;&#x6301; surface &#x786C;&#x4EF6;</a>
+    sudo add-apt-repository ppa:cappelikan/ppa
+    sudo apt update
+    sudo apt install -y mainline
+    &#x5B89;&#x88C5;6.4&#x7684;&#x5185;&#x6838;&#xFF0C;&#x5728;&#x540E;&#x7EED;&#x7F16;&#x8BD1;&#x4E2D;&#x4F1A;&#x5931;&#x8D25; (Make Error 2 Error10 Error 127)
+    &#x5B89;&#x88C5;6.1.0&#xFF0C;&#x540E;&#x7EED;&#x7F16;&#x8BD1;&#x4EE5;&#x53CA;&#x4F7F;&#x7528;&#x6B63;&#x5E38;</p>
+<p>5 . &#x89E6;&#x6478;&#x5C4F;&#x6A21;&#x5757;&#x7F16;&#x8BD1;
+    <a href="https://www.linux.org/threads/ubuntu-22-04-on-surface-pro-7.43071/" target="_blank">guidances partion: Setting up the Touch Screeen</a>
+5.1 &#x7F16;&#x8BD1;&#x5B89;&#x88C5; ithc&#xFF0C;&#x5B9E;&#x73B0;&#x5355;&#x70B9;&#x89E6;&#x63A7; <a href="https://github.com/quo/ithc-linux" target="_blank">repo: https://github.com/quo/ithc-linux</a> </p>
+<pre><code>    sudo apt install git meson build-essential dkms pkg-config cmake systemd -y
+    cd Dowloads
+    git clone https://github.com/quo/ithc-linux.git
+    cd ithc-linux
+    sudo make dkms-install
+    sudo modprobe ithc
+</code></pre><p>5.2  &#x4FEE;&#x6539;&#x5F15;&#x5BFC;&#x6587;&#x4EF6; </p>
+<pre><code>    sudo vim  /etc/default/grub
+         GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet intremap=nosid splash&quot; 
+    sudo update-grub
+</code></pre><p>6 . &#x7F16;&#x8BD1;&#x5B89;&#x88C5; iptsd&#xFF0C;&#x5B9E;&#x73B0;&#x591A;&#x70B9;&#x89E6;&#x63A7;&#x548C;&#x89E6;&#x63A7;&#x7B14; <a href="https://github.com/linux-surface/iptsd" target="_blank">repo: https://github.com/linux-surface/iptsd</a></p>
+<pre><code>sudo apt install -y gcc g++ ninja-build libeigen3-dev libfmt-dev libinih-dev libgsl-dev
+git clone https://github.com/linux-surface/iptsd
+cd iptsd
+meson build
+ninja -C build
+sudo ninja -C build install
+</code></pre><ul>
+<li>&#x68C0;&#x67E5;&#x662F;&#x5426;&#x7531; systemd &#x6258;&#x7BA1;,&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x6B64;&#x6587;&#x4EF6;&#xFF0C;/lib/systemd/system/iptsd.service<pre><code>systemctl status iptsd
+</code></pre></li>
+</ul>
+<p>7 . &#x7CFB;&#x7EDF;&#x5E94;&#x80FD;&#x6B63;&#x5E38;&#x4F7F;&#x7528;</p>
 
                                 
                                 </section>
@@ -351,12 +386,12 @@
 
             
                 
-                <a href="../Tips/section1.html" class="navigation navigation-prev " aria-label="Previous page: Tips">
+                <a href="section2.html" class="navigation navigation-prev " aria-label="Previous page: MAC Mini With T2">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="section1.html" class="navigation navigation-next " aria-label="Next page: DELL wyse3040">
+                <a href="section4.html" class="navigation navigation-next " aria-label="Next page: OQO & Fujitsu">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -367,7 +402,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Hardware","level":"1.3","depth":1,"next":{"title":"DELL wyse3040","level":"1.3.1","depth":2,"path":"Hardware/section1.md","ref":"Hardware/section1.md","articles":[]},"previous":{"title":"Tips","level":"1.2.1","depth":2,"path":"Tips/section1.md","ref":"Tips/section1.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Hardware/README.md","mtime":"2023-09-15T14:10:38.029Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-09-16T14:14:30.752Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Micro Surface Pro9","level":"1.3.3","depth":2,"next":{"title":"OQO & Fujitsu","level":"1.3.4","depth":2,"path":"Hardware/section4.md","ref":"Hardware/section4.md","articles":[]},"previous":{"title":"MAC Mini With T2","level":"1.3.2","depth":2,"path":"Hardware/section2.md","ref":"Hardware/section2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Hardware/section3.md","mtime":"2023-09-16T13:03:49.661Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-09-16T14:14:30.752Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

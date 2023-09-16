@@ -1,3 +1,5 @@
+2023-04
+
 ## 一、wyse3040简介
 1. Dell Wyse 3040 瘦客户机是一种低成本的入门级瘦客户机平台。这些瘦客户机具有 x86 处理器，官方允许运行 Wyse ThinOS、启用 PCoIP 的 Wyse ThinOS 和 Wyse ThinLinux。
 2. 硬件情况  
