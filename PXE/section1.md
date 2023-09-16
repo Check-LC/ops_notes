@@ -3,17 +3,17 @@
 ---------------------------------
 基础：网络内的 PXE server & clinets 网络在一个网段
    
-0 . [autoinstall over PXE（最重要介绍了installer）](https://www.molnar-peter.hu/en/ubuntu-jammy-netinstall-pxe.html)
-1 . [官方netinstall文档（for server）](https://ubuntu.com/server/docs/install/netboot-amd64)
-2 . [preseed和内核启动参数参考,有价值](https://zhangguanzhang.github.io/2019/08/06/preseed/)
-3 . [基于Ubuntu 20.04 Server搭建PXE自动安装环境](https://segmentfault.com/a/1190000040527863?utm_source=sf-similar-article)
-4 . [基于Ubuntu server的 PXE网络装机](https://juejin.cn/post/7198336167913439291)
-5 . https://blog.csdn.net/u010438035/article/details/128396790  （虚拟机）
-6 . https://www.cpweb.top/1698
-7 . https://blog.gpx.moe/2023/02/09/pxe-server/  pxe服务器搭建较为详细
-8 . [批量安装Windows系统](https://www.modb.pro/db/227748)
-9 . [官方讨论帖](https://discourse.ubuntu.com/t/netbooting-the-live-server-installer/14510/15) 
-10 . [Ubuntu16.04桌面版pxe启动实现自动安装（原型）](https://blog.csdn.net/wanpengpenga/article/details/81233803?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-81233803-blog-102515747.235%5Ev38%5Epc_relevant_sort_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-81233803-blog-102515747.235%5Ev38%5Epc_relevant_sort_base2&utm_relevant_index=2)
+0 . [autoinstall over PXE（最重要介绍了installer）](https://www.molnar-peter.hu/en/ubuntu-jammy-netinstall-pxe.html)  
+1 . [官方netinstall文档（for server）](https://ubuntu.com/server/docs/install/netboot-amd64)  
+2 . [preseed和内核启动参数参考,有价值](https://zhangguanzhang.github.io/2019/08/06/preseed/)  
+3 . [基于Ubuntu 20.04 Server搭建PXE自动安装环境](https://segmentfault.com/a/1190000040527863?utm_source=sf-similar-article)  
+4 . [基于Ubuntu server的 PXE网络装机](https://juejin.cn/post/7198336167913439291)  
+5 . https://blog.csdn.net/u010438035/article/details/128396790  （虚拟机）  
+6 . https://www.cpweb.top/1698  
+7 . https://blog.gpx.moe/2023/02/09/pxe-server/  pxe服务器搭建较为详细  
+8 . [批量安装Windows系统](https://www.modb.pro/db/227748)  
+9 . [官方讨论帖](https://discourse.ubuntu.com/t/netbooting-the-live-server-installer/14510/15)  
+10 . [Ubuntu16.04桌面版pxe启动实现自动安装（原型）](https://blog.csdn.net/wanpengpenga/article/details/81233803?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-81233803-blog-102515747.235%5Ev38%5Epc_relevant_sort_base2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-81233803-blog-102515747.235%5Ev38%5Epc_relevant_sort_base2&utm_relevant_index=2)  
 11 . [PXE排错参考,重要](https://zhuanlan.zhihu.com/p/67192427)
 
 ## 执行过程
