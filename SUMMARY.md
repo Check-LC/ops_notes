@@ -6,6 +6,8 @@
   * [MAC Mini With T2](Hardware/section2.md)
   * [Micro Surface Pro9](Hardware/section3.md)
   * [OQO & Fujitsu](Hardware/section4.md)
+* [PXE install](PXE/README.md)
+  * [Ubuntu Desktop 2204](PXE/section1.md)
 * [Kubesphere](Kubesphere/README.md)
 * [JDK Install]()
 * [Markdown](Markdown/README.md)
