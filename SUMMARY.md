@@ -11,7 +11,7 @@
 * [PXE install](PXE/README.md)
   * [Ubuntu Desktop 2204](PXE/section1.md)
 * [Kubesphere](Kubesphere/kubesphere.md)
-* [JDK Install](<README (1).md>)
+* [JDK Install](JDK7/section1.md)
 * [Markdown](Markdown/README.md)
   * [example](Markdown/section1.md)
 * [To Do List](Todo/README.md)
