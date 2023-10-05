@@ -1,3 +1,5 @@
+# Table of contents
+
 * [README](README.md)
 * [Tips](Tips/README.md)
   * [Tips](Tips/section1.md)
@@ -8,10 +10,8 @@
   * [OQO & Fujitsu](Hardware/section4.md)
 * [PXE install](PXE/README.md)
   * [Ubuntu Desktop 2204](PXE/section1.md)
-* [Kubesphere](Kubesphere/README.md)
-* [JDK Install]()
+* [Kubesphere](kubesphere.md)
+* [JDK Install](<README (1).md>)
 * [Markdown](Markdown/README.md)
   * [example](Markdown/section1.md)
 * [To Do List](Todo/README.md)
-* [test] 
-
