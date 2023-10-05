@@ -51,3 +51,14 @@ systemctl status iptsd
 ```
 
 7 . 系统应能正常使用
+
+8 . 重新安装为windows（非官方恢复）
+	8.1 镜像来源[uupdump](https://www.uupdump.cn/download.php?id=6661ce49-e38c-49ac-b4bf-d13779b8eed6&pack=en-us&edition=professional), 执行linux命名的 sh 脚本; 在此之前阅读 readme 文件，安装包 " ***sudo apt install aria2 cabextract wimtools chntpw genisoimage*** "
+	8.2 key：NMF2M-4HB3F-D63KV-7PPDB-WHV26
+	8.3 跳过激活，使用本地账户。shift + F10 , cmd 执行 "***oobe\bypassnro***""
+	8.4 驱动补充安装,地址：[官方驱动下载](https://www.microsoft.com/en-us/download/details.aspx?id=104680)，方法：双击执行安装。
+	8.5 重启，应可正常使用
+
+9 . 官方恢复镜像
+ 通过序列号匹配镜像文件，写入U盘启动器
+ 将 home 升级到 pro 版本系统

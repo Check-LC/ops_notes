@@ -18,7 +18,7 @@
 
 ## 执行过程
 -------------------------------------------
-### 一、 开启PXE启动程序（F9搜索）(本案例使用的华硕主板)
+### 一、 开启主板PXE启动程序（F9搜索）(本案例使用的华硕主板)
 ---------------------------------------
 	0. uefi（实验不成功，本方案不适用）
 	1. 高级--网络堆栈--enable--pxe ipv4 enable 
@@ -59,7 +59,7 @@ Jun 19 16:05:38 inboc-sys-lc dhcpd[1517378]: DHCPACK on 10.10.6.3 to 58:11:22:bd
 ```
 
 错误：pxe启动  dhcp--没有request请求，客户端输出 PXE-E16 NO valid offer recieved
-***原因：主板PXE设置不正确，需要全设置为仅uefi  或者  仅legacy***
+***原因：主板PXE设置不正确，需要全设置为仅 uefi 或者仅 legacy***
 ```
 Jun 19 16:19:26 inboc-sys-lc dhcpd[1517378]: DHCPDISCOVER from 58:11:22:bd:27:35 via enp7s0
 Jun 19 16:19:27 inboc-sys-lc dhcpd[1517378]: DHCPOFFER on 10.10.6.4 to 58:11:22:bd:27:35 via enp7s0
