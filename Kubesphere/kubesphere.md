@@ -120,7 +120,7 @@ systemctl daemon-reload && systemctl restart docker
 ```
 kubectl logs -n kubesphere-system $(kubectl get pod -n kubesphere-system -l 'app in (ks-install, ks-installer)' -o jsonpath='{.items[0].metadata.name}') -f
 ```
-2. 安装完成，可以访问dashboard，并修改登录密码
+2. 安装完成，可以访问dashboard，并修改登录密码  
   ![](attachments/installation-complete.png)
 
 ## 四、 自动化
