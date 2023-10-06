@@ -1,13 +1,14 @@
-0 . mark
-	[Devops Roadmap](https://gitbook.curiouser.top/)
-	[咖啡吧](https://ops-coffee.cn/knowledge)
-	[优点知识](https://youdianzhishi.com)
-	[云原生资料库 (jimmysong.io)](https://lib.jimmysong.io/)
-	[某集体站点](https://www.infvie.com/)
-	[仲儿的自留地](https://lisz.me/)
-	[devops](https://owen2016.gitee.io)
-	[超详细站点](https://wiki.shileizcc.com/confluence/#all-updates)
-	[ansible 中文指南](https://ansible-tran.readthedocs.io/en/latest/docs/playbooks.html)
+0 . mark  
+
+	[Devops Roadmap](https://gitbook.curiouser.top/)  
+	[咖啡吧](https://ops-coffee.cn/knowledge)  
+	[优点知识](https://youdianzhishi.com)  
+	[云原生资料库 (jimmysong.io)](https://lib.jimmysong.io/)  
+	[某集体站点](https://www.infvie.com/)  
+	[仲儿的自留地](https://lisz.me/)  
+	[devops](https://owen2016.gitee.io)  
+	[超详细站点](https://wiki.shileizcc.com/confluence/#all-updates)  
+	[ansible 中文指南](https://ansible-tran.readthedocs.io/en/latest/docs/playbooks.html)  
 
 
 1 . mount 挂载指定域下的Samba服务器到本地
