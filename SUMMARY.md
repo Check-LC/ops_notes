@@ -1,6 +1,7 @@
 # Table of contents
 
 * [README](README.md)
+* [To Do List](Todo/README.md)
 * [Tips](Tips/README.md)
   * [Tips](Tips/section1.md)
 * [Hardware](Hardware/README.md)
@@ -14,7 +15,6 @@
 * [JDK Install](JDK7/section1.md)
 * [Markdown](Markdown/README.md)
   * [example](Markdown/section1.md)
-* [To Do List](Todo/README.md)
 * [Encrypt](Encrypt/README.md)
   * [primary](Encrypt/section1.md)
 * [Clickhouse Cluster](Clickhouse/section1.md)
