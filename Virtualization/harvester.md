@@ -1,19 +1,19 @@
 # Harvester
 
 1.1  iso install  
-	- map iso device
-	- select Next Boot on viirtual iso
-	- restart sys
-	- some important configuration during installlation
-	- nic ip： 172.16.22.228
-	- vlan：1622
-	- virtual ip：dhcp  or static--172.16.22.50
-	- cluster token: harvester-token
-	- NTP： time.inboc.net
-	- proxy address: 如果需要用 HTTP 代理来访问外部环境，此处输入代理的 URL。否则，留空。
-	- HTTP URL： 从远端服务器 URL 导入 SSH 密钥。
-	- HTTP URL：如果你需要使用 [Harvester 配置文件](https://docs.harvesterhci.io/zh/v1.1/install/harvester-configuration)来自定义主机，在此处输入 HTTP URL
-    ![|900](attachments/harvester-insatll-selection.png)
+- map iso device
+- select Next Boot on viirtual iso  
+- restart sys  
+- some important configuration during installlation  
+- nic ip： 172.16.22.228  
+- vlan：1622  
+- virtual ip：dhcp  or static--172.16.22.50  
+- cluster token: harvester-token  
+- NTP： time.inboc.net  
+- proxy address: 如果需要用 HTTP 代理来访问外部环境，此处输入代理的 URL。否则，留空。  
+- HTTP URL： 从远端服务器 URL 导入 SSH 密钥。  
+- HTTP URL：如果你需要使用 [Harvester 配置文件](https://docs.harvesterhci.io/zh/v1.1/install/harvester-configuration)来自定义主机，在此处输入 HTTP URL  
+![|900](attachments/harvester-insatll-selection.png)  
 
 1.2 OS 安装问题
  - 安装时间长（第一次是dhcp配置vip，第二次是vip static 172.16.22.50，或许影响run.sh执行）  
