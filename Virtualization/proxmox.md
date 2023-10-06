@@ -3,24 +3,24 @@
 [中文手册](https://pve-doc-cn.readthedocs.io/zh_CN/latest/index.html)  
 
 1 . server：  
-	Dell PowerEdge  R730  
-	2 x Interl(R) Xeon(R) CPU E5-2696 v4 @ 2.20Ghz  
-	416GiB Memory  
+    Dell PowerEdge  R730  
+    2 x Interl(R) Xeon(R) CPU E5-2696 v4 @ 2.20Ghz  
+    416GiB Memory  
 2 .  [proxmox镜像](https://www.proxmox.com/en/downloads/proxmox-virtual-environment/iso)  
 3 .  web 登录并配置os  
-	 javaws viewer.jnlp 进入服务器  
-	 将镜像挂载到虚拟介质（virtual Media  选择镜像路径并映射）  
-	 Next Boot（设置 virtual cd boot）  
-	 Power  设置 restart ，按F2进入设置bios  
-	正常安装（没有对本服务器做raid设置）  
-	安装过程的ip设置  
-	ip： 172.16.22.228， vlan：1622， dns：10.13.1.1，login： root Inboc@2020  
-	email: chao.long@inboc.net  
+    javaws viewer.jnlp 进入服务器  
+    将镜像挂载到虚拟介质（virtual Media  选择镜像路径并映射）  
+    Next Boot（设置 virtual cd boot）  
+    Power  设置 restart ，按F2进入设置bios  
+    正常安装（没有对本服务器做raid设置）  
+    安装过程的ip设置  
+    ip： 172.16.22.228， vlan：1622， dns：10.13.1.1，login： root Inboc@2020  
+    email: chao.long@inboc.net  
 	
 4 . web 前端登录  
-	 172.16.22.228:8006 无法联通，且不能ping任何地址  
-	 ip a s 只有vmbr0  
-	 修改并重新设置 /etc/network/interfaces  
+    172.16.22.228:8006 无法联通，且不能ping任何地址  
+    ip a s 只有vmbr0  
+    修改并重新设置 /etc/network/interfaces  
 ```
 auto lo  
 iface lo inet loopback  
