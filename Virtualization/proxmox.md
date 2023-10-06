@@ -3,9 +3,9 @@
 [中文手册](https://pve-doc-cn.readthedocs.io/zh_CN/latest/index.html)  
 
 1 . server：  
-        - Dell PowerEdge  R730  
-        - 2 x Interl(R) Xeon(R) CPU E5-2696 v4 @ 2.20Ghz  
-        - 416GiB Memory  
+         - Dell PowerEdge  R730  
+         - 2 x Interl(R) Xeon(R) CPU E5-2696 v4 @ 2.20Ghz  
+         - 416GiB Memory  
 2 .  [proxmox镜像](https://www.proxmox.com/en/downloads/proxmox-virtual-environment/iso)  
 3 .  web 登录并配置os  
     javaws viewer.jnlp 进入服务器  
