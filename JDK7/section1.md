@@ -1,4 +1,4 @@
-Ubuntu install jdk7 to connect idarc8
+# Ubuntu install jdk7 to connect idarc8
 
 [参考1](https://blog.csdn.net/stone_2323/article/details/77993739)
 [参考2](https://www.cnblogs.com/mrwuzs/p/13200332.html)
