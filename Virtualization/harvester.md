@@ -35,8 +35,8 @@ Note：  发现可以访问node ip 进入Web UI
   - 网络-->集群网络配置-->创建集群网络-->命名并标识-->对该集群网络创建网络配置-->选择网卡和bond模式  
   - 基于以上，选择网络--> 虚拟机网络-->类型：L2VlanNetwork(若选择untagged，将不能联通网络)-->vlanID-->集群网络  
   - 创建虚拟机时，使用这个虚拟机网络，配置ip相关内容即可通网。  
-  - [流程](https://app.tango.us/app/workflow/Harvester-NetWork-5d7271ea5ed24935a0612bccd0eba2bb)  
-    ![创建的流程图pdf](attachments/Harvester%20NetWork.pdf)  
+  - [流程图](https://app.tango.us/app/workflow/Harvester-NetWork-5d7271ea5ed24935a0612bccd0eba2bb)  
+    [参考pdf](attachments/Harvester%20NetWork.pdf)  
 
 2.2 虚拟机创建  
   - 2.2.1 首先上传镜像  
