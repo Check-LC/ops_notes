@@ -5,7 +5,9 @@
 
 1 . 背景： ubuntu 2204 安装jdk11 ，jdk8 连接idrac8不成功。jdk11出现network connection has been dropped。
            jdk8 出现access denied
+
 2 . 尝试jdk7（该大版本的最新和最旧都尝试了，仍然出现access denied，最后reset idrac）(新一次的连接最好都做一次reset 并下载新的jnlp文件)
+
 3 . 安装步骤
 [jdk下载链接](https://download.oracle.com/otn/java/jdk/7/jdk-7-linux-x64.tar.gz)需要oracle帐号（且压缩包中需要具有bin/javaws）
 ```
@@ -25,5 +27,6 @@
 	java -version #确认安装情况和版本
 	javaws viewer.jnlp
 ```
-4 . reset idrac to solve access denied，better to redownload view.jnlp file  
+
+4 . reset idrac to solve access denied，better to redownload view.jnlp file , then start the jvm
 	![|800](attachments/reset-idrac.png)
