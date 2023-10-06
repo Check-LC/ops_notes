@@ -11,7 +11,7 @@
 
 1.2 链路聚合
 	选择端口汇聚,选择trunk1,鼠标拖动选择目标端口,点击应用即可添加
-	点击apply应用,并点击左侧工具栏内保存按钮
+	点击apply应用,并点击左侧工具栏内保存按钮  
 	![|800](attachments/02-link-aggregation.png)
  
 ## 2. ubuntu配置
@@ -79,15 +79,15 @@ cat /proc/net/bonding/bond0   (查看bond0详细内容)
 	 ![|825](attachments/04-caoco-IP-SET.png)
 
 3.2 设置默认网关和DNS,修改后点击本应用本页面设置
-	本例网关: 10.0.0.254  DNS: 10.13.1.1 , 10.13.1.2 可以通信WAN网
+	本例网关: 10.0.0.254  DNS: 10.13.1.1 , 10.13.1.2 可以通信WAN网  
 	![|800](attachments/05-caoco-DNS-Gatway.png)
 
 3.3 链路聚合
 	本例链路聚合仅用于连接NAS,设置静态链路聚合,按照拓扑图,仅在10.0.0.230设置
-	选择创建,勾选目标端口,创建后应用设置
+	选择创建,勾选目标端口,创建后应用设置  
 	![|800](attachments/06-link-aggregation.png)
 ## 4. 局域网内工具测速
-4.1 iperf 网卡测试工具检测结果
+4.1 iperf 网卡测试工具检测结果  
 ![|830](attachments/03-speed-test.png)
 
 ## 5. 接入主网测试
