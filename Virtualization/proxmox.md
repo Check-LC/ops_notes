@@ -93,7 +93,7 @@ iface vmbr1 inet static
     post-up iptables -t nat -A POSTROUTING -s '10.100.100.0/24' -o vmbr0.1622 -j MASQUERADE
     post-down iptables -t nat -D POSTROUTING -s '10.100.100.0/24' -o vmbr0.1622 -j MASQUERADE
 ```
-6.1.1 在UI界面实现，新建linux bridge
+6.1.1 在UI界面实现，新建linux bridge   
 	![|800](attachments/sub-network.png)
 
 6 .2 虚拟机设置

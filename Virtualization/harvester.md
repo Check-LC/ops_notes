@@ -1,6 +1,6 @@
 # Harvester
 
-1 .1  iso install 
+1 .1  iso install  
 	map iso device
 	select Next Boot on viirtual iso
 	restart sys
