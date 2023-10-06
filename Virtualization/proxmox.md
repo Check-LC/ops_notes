@@ -6,7 +6,9 @@
 - Dell PowerEdge  R730  
 - 2 x Interl(R) Xeon(R) CPU E5-2696 v4 @ 2.20Ghz  
 - 416GiB Memory  
+
 2 .  [proxmox镜像](https://www.proxmox.com/en/downloads/proxmox-virtual-environment/iso)  
+
 3 .  web 登录并配置os  
 - javaws viewer.jnlp 进入服务器  
 - 将镜像挂载到虚拟介质（virtual Media  选择镜像路径并映射）  
@@ -18,9 +20,9 @@
 - email: chao.long@inboc.net  
 	
 4 . web 前端登录  
-    172.16.22.228:8006 无法联通，且不能ping任何地址  
-    ip a s 只有vmbr0  
-    修改并重新设置 /etc/network/interfaces  
+- 172.16.22.228:8006 无法联通，且不能ping任何地址  
+- ip a s 只有vmbr0  
+- 修改并重新设置 /etc/network/interfaces  
 ```
 auto lo  
 iface lo inet loopback  
@@ -49,10 +51,10 @@ iface enp130s0f1 inet manual
 上述配置之后，可以ping  可以ssh，不能登录web ui
 
 5 . 解决web ui登录  
-   实际原因：  
-        系统安装成功，但是pve安装不完整  
-        网卡使用虚拟网卡做连接，并桥接到某物理网卡，同时划分到交换机的vlan中。  
-        [参考文件](https://foxi.buduanwang.vip/virtualization/pve/681.html/)  
+- 实际原因：  
+  - 系统安装成功，但是pve安装不完整  
+  - 网卡使用虚拟网卡做连接，并桥接到某物理网卡，同时划分到交换机的vlan中。  
+  - [参考文件](https://foxi.buduanwang.vip/virtualization/pve/681.html/)  
 ```
 修改/etc/network/interfaces
 auto lo
@@ -97,7 +99,7 @@ iface vmbr1 inet static
 	![|800](attachments/sub-network.png)
 
 6 .2 虚拟机设置  
- 在UI 将目标虚拟机选择网络，加入该子网段，并设置网络  
+- 在UI 将目标虚拟机选择网络，加入该子网段，并设置网络  
  ```
  ip a a 10.100.100.2/24 dev ens18
  ip route add default via 10.100.100.254
