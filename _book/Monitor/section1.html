@@ -1,0 +1,983 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>grafana+prometheus basic points · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="section2.html" />
+    
+    
+    <link rel="prev" href="readme.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Tips/">
+            
+                <a href="../Tips/">
+            
+                    
+                    Tips
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Tips/section1.html">
+            
+                <a href="../Tips/section1.html">
+            
+                    
+                    Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Hardware/">
+            
+                <a href="../Hardware/">
+            
+                    
+                    Hardware
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Hardware/section1.html">
+            
+                <a href="../Hardware/section1.html">
+            
+                    
+                    DELL wyse3040
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Hardware/section2.html">
+            
+                <a href="../Hardware/section2.html">
+            
+                    
+                    MAC Mini With T2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Hardware/section3.html">
+            
+                <a href="../Hardware/section3.html">
+            
+                    
+                    Micro Surface Pro9
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Hardware/section4.html">
+            
+                <a href="../Hardware/section4.html">
+            
+                    
+                    OQO & Fujitsu
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../PXE/">
+            
+                <a href="../PXE/">
+            
+                    
+                    PXE install
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../PXE/section1.html">
+            
+                <a href="../PXE/section1.html">
+            
+                    
+                    Ubuntu Desktop 2204
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Kubesphere/kubesphere.html">
+            
+                <a href="../Kubesphere/kubesphere.html">
+            
+                    
+                    Kubesphere
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../JDK7/section1.html">
+            
+                <a href="../JDK7/section1.html">
+            
+                    
+                    JDK Install
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Markdown/">
+            
+                <a href="../Markdown/">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Markdown/section1.html">
+            
+                <a href="../Markdown/section1.html">
+            
+                    
+                    example
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Todo/">
+            
+                <a href="../Todo/">
+            
+                    
+                    To Do List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Encrypt/">
+            
+                <a href="../Encrypt/">
+            
+                    
+                    Encrypt
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Encrypt/section1.html">
+            
+                <a href="../Encrypt/section1.html">
+            
+                    
+                    primary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Clickhouse/section1.html">
+            
+                <a href="../Clickhouse/section1.html">
+            
+                    
+                    Clickhouse Cluster
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                    Monitor
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.11.1" data-path="section1.html">
+            
+                <a href="section1.html">
+            
+                    
+                    grafana+prometheus basic points
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="section2.html">
+            
+                <a href="section2.html">
+            
+                    
+                    Alert TTS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Switch/readme.html">
+            
+                <a href="../Switch/readme.html">
+            
+                    
+                    Network Switch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../Switch/section1.html">
+            
+                <a href="../Switch/section1.html">
+            
+                    
+                    perform a simple configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Virtualization/readme.html">
+            
+                <a href="../Virtualization/readme.html">
+            
+                    
+                    Virtualization
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../Virtualization/harvester.html">
+            
+                <a href="../Virtualization/harvester.html">
+            
+                    
+                    Harvester
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../Virtualization/proxmox.html">
+            
+                <a href="../Virtualization/proxmox.html">
+            
+                    
+                    Proxmox
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../Gitbook/readmd.html">
+            
+                <a href="../Gitbook/readmd.html">
+            
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../Gitbook/section1.html">
+            
+                <a href="../Gitbook/section1.html">
+            
+                    
+                    Achieving
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../DNS/readme.html">
+            
+                <a href="../DNS/readme.html">
+            
+                    
+                    DNS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../DNS/dns.html">
+            
+                <a href="../DNS/dns.html">
+            
+                    
+                    deploy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >grafana+prometheus basic points</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="promgrafa-primary">prom+grafa primary</h1>
+<h2 id="&#x57FA;&#x7840;">&#x57FA;&#x7840;</h2>
+<ol>
+<li><a href="https://docs.aws.amazon.com/zh_cn/grafana/latest/userguide/v9-dash-variable-add.html#v9-dash-variable-add-filter" target="_blank">&#x4E9A;&#x9A6C;&#x900A;&#x4E2D;&#x8BD1;grafana&#x6587;&#x6863;</a>  </li>
+<li><a href="https://blog.51cto.com/root/3033762" target="_blank">&#x4E00;&#x7BC7;&#x6BD4;&#x8F83;&#x8BE6;&#x7EC6;&#x7684;promql&#x8868;&#x8FBE;&#x5F0F;&#x6587;&#x7AE0;</a>  </li>
+<li><p><a href="https://docs.rancher.cn/docs/rancher2/cluster-admin/tools/cluster-monitoring/expression/_index#%E9%9B%86%E7%BE%A4-cpu-%E5%88%A9%E7%94%A8%E7%8E%87" target="_blank">rancher&#x96C6;&#x7FA4;&#x68C0;&#x6D4B;&#x63A8;&#x8350;&#x6307;&#x6807;</a>  </p>
+</li>
+<li><p><strong>Query Editor&#xFF1A;</strong> &#x67E5;&#x8BE2;&#x7F16;&#x8F91;&#x5668;&#xFF0C;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x83B7;&#x53D6;&#x54EA;&#x4E00;&#x90E8;&#x5206;&#x6570;&#x636E;&#x3002;&#x7C7B;&#x4F3C;&#x4E8E;sql&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#xFF0C;&#x4F46;&#x662F;&#x5176;&#x4E2D;&#x7684;&#x4E0D;&#x540C;DataSource  &#x83B7;&#x53D6;&#x6570;&#x636E;&#x7684;&#x65B9;&#x5F0F;&#x4E0D;&#x540C;&#xFF0C;&#x5199;&#x6CD5;&#x4FBF;&#x4E0D;&#x540C;&#x3002;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5E76;&#x81EA;&#x52A8;&#x751F;&#x6210;</p>
+</li>
+<li>instance -- Prometheus&#x4E2D;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x66B4;&#x9732;&#x76D1;&#x63A7;&#x6837;&#x672C;&#x6570;&#x636E;&#x7684;HTTP&#x670D;&#x52A1;&#x79F0;&#x4E3A;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;Prometheus&#x4E2D;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x66B4;&#x9732;&#x76D1;&#x63A7;&#x6837;&#x672C;&#x6570;&#x636E;&#x7684;HTTP&#x670D;&#x52A1;&#x79F0;&#x4E3A;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;</li>
+<li>job -- &#x4E00;&#x7EC4;&#x7528;&#x4E8E;&#x76F8;&#x540C;&#x91C7;&#x96C6;&#x76EE;&#x7684;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x6216;&#x8005;&#x540C;&#x4E00;&#x4E2A;&#x91C7;&#x96C6;&#x8FDB;&#x7A0B;&#x7684;&#x591A;&#x4E2A;&#x526F;&#x672C;&#x5219;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;(Job)&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x4E00;&#x7EC4;&#x7528;&#x4E8E;&#x76F8;&#x540C;&#x91C7;&#x96C6;&#x76EE;&#x7684;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x6216;&#x8005;&#x540C;&#x4E00;&#x4E2A;&#x91C7;&#x96C6;&#x8FDB;&#x7A0B;&#x7684;&#x591A;&#x4E2A;&#x526F;&#x672C;&#x5219;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;(Job)&#x8FDB;&#x884C;&#x7BA1;&#x7406;</li>
+<li>&#x6807;&#x7B7E;(label)&#x53CD;&#x6620;&#x4E86;&#x5F53;&#x524D;&#x6837;&#x672C;&#x7684;&#x7279;&#x5F81;&#x7EF4;&#x5EA6;</li>
+<li>&#x4EE5;<code>__</code>&#x4F5C;&#x4E3A;&#x524D;&#x7F00;&#x7684;&#x6807;&#x7B7E;&#xFF0C;&#x662F;&#x7CFB;&#x7EDF;&#x4FDD;&#x7559;&#x7684;&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x53EA;&#x80FD;&#x5728;&#x7CFB;&#x7EDF;&#x5185;&#x90E8;&#x4F7F;&#x7528;</li>
+<li><p>Expression &#x662F;&#x4E00;&#x79CD;&#x57FA;&#x4E8E; PromQL &#x7684;&#x67E5;&#x8BE2;&#x65B9;&#x5F0F;&#xFF0C;&#x5B83;&#x5141;&#x8BB8;&#x4F60;&#x4F7F;&#x7528; PromQL &#x8868;&#x8FBE;&#x5F0F;&#x6765;&#x67E5;&#x8BE2; Prometheus &#x4E2D;&#x7684;&#x6307;&#x6807;&#xFF0C;&#x4ECE;&#x800C;&#x521B;&#x5EFA;&#x66F4;&#x590D;&#x6742;&#x548C;&#x7075;&#x6D3B;&#x7684;&#x67E5;&#x8BE2;&#xFF1B;&#x5E38;&#x7528;&#x4E8E;&#x8B66;&#x62A5;&#x529F;&#x80FD;&#x3002;</p>
+</li>
+<li><p><strong>Metrics&#x6570;&#x636E;&#x7C7B;&#x578B;</strong>&#xFF1A; </p>
+<ol>
+<li>counter-- &#x8BA1;&#x6570;&#x5668;&#xFF0C;&#x7D2F;&#x52A0;&#x7684;&#x6307;&#x6807;(&#x63A8;&#x8350;&#x4F7F;&#x7528;_total&#x4F5C;&#x4E3A;&#x540E;&#x7F00;Counter&#x7C7B;&#x578B;&#x6307;&#x6807;&#x7684;&#x540D;&#x79F0;&#x65F6;&#x63A8;&#x8350;&#x4F7F;&#x7528;_total&#x4F5C;&#x4E3A;&#x540E;&#x7F00;)</li>
+<li>gauge--&#x4EEA;&#x8868;&#x76D8;&#xFF0C;&#x76F4;&#x63A5;&#x663E;&#x793A;&#x7CFB;&#x7EDF;&#x5F53;&#x524D;&#x503C;,&#x6837;&#x672C;&#x6570;&#x636E;&#x53EF;&#x589E;&#x53EF;&#x51CF;&#xFF1B;</li>
+<li>Histogram&#x548C;Summary&#x4E3B;&#x7528;&#x7528;&#x4E8E;&#x7EDF;&#x8BA1;&#x548C;&#x5206;&#x6790;&#x6837;&#x672C;&#x7684;&#x5206;&#x5E03;&#x60C5;&#x51B5;;Histogram&#x901A;&#x8FC7;histogram_quantile&#x51FD;&#x6570;&#x662F;&#x5728;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x8BA1;&#x7B97;&#x7684;&#x5206;&#x4F4D;&#x6570;&#x3002; &#x800C;Sumamry&#x7684;&#x5206;&#x4F4D;&#x6570;&#x5219;&#x662F;&#x76F4;&#x63A5;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x8BA1;&#x7B97;&#x5B8C;&#x6210;</li>
+</ol>
+</li>
+<li><p>avg &#xFF08;&#xFF09; by &#xFF08;&#xFF09;--  &#x5176;&#x4E2D;&#x7684;by &#x53EF;&#x4EE5;&#x89C6;&#x4F5C;group by</p>
+</li>
+<li>rate()--&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA1;&#x7B97;&#x5728;&#x5355;&#x4F4D;&#x65F6;&#x95F4;&#x5185;&#x6837;&#x672C;&#x6570;&#x636E;&#x7684;&#x53D8;&#x5316;&#x60C5;&#x51B5;&#x5373;&#x589E;&#x957F;&#x7387;</li>
+<li>delta()--&#x8BA1;&#x7B97;&#x6837;&#x672C;&#x5728;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x5185;&#x7684;&#x53D8;&#x5316;&#x60C5;&#x51B5;</li>
+<li><p>predict_linear()--&#x9884;&#x6D4B;&#x53D8;&#x5316;&#xFF09;</p>
+</li>
+<li><p>Transform data&#xFF1A; &#x6570;&#x636E;&#x8F6C;&#x6362;&#xFF0C;&#x6570;&#x636E;&#x5904;&#x7406;</p>
+<ol>
+<li>Add field from calculation&#xFF1A; &#x57FA;&#x4E8E;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x65B0;&#x589E;&#x5B57;&#x6BB5;&#xFF0C;&#x901A;&#x8FC7;&#x539F;&#x6709;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#xFF08;&#x9700;&#x8981;&#x7EE7;&#x7EED;&#x5B9E;&#x8DF5;&#xFF09;</li>
+<li>Concatenate fields&#xFF1A; &#x5C06;&#x6240;&#x6709;&#x5B57;&#x6BB5;&#x8FDE;&#x63A5;&#x8D77;&#x6765;&#x7EC4;&#x6210;&#x65B0;&#x5B57;&#x6BB5;</li>
+<li>Config from query results&#xFF1A;&#x4ECE;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x4E2D;&#x63D0;&#x53D6;&#x5B57;&#x6BB5;&#xFF0C;&#x5E76;&#x5E94;&#x7528;&#x4E8E;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x4E2D;</li>
+<li>Convert field type&#xFF1A; &#x505A;&#x6570;&#x636E;&#x7684;&#x683C;&#x5F0F;&#x8F6C;&#x6362;</li>
+<li>Filter data by name&#xFF1A; &#x9009;&#x62E9;&#x9700;&#x8981;&#x5C55;&#x793A;&#x7684;&#x5B57;&#x6BB5;</li>
+<li>create heatmap&#xFF1A; &#x6839;&#x636E;&#x6E90;&#x6570;&#x636E;&#x8BA1;&#x7B97;&#x70ED;&#x56FE;</li>
+<li>Extract fields&#xFF1A; &#x5206;&#x6790;&#x5185;&#x5BB9;&#x4E2D;&#x7684;&#x5B57;&#x6BB5; (JSON, labels&#x7B49;)</li>
+<li>Filter by name&#xFF1A; &#x901A;&#x8FC7;&#x6B63;&#x5219;&#x6216;&#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x8FC7;&#x6EE4;&#x6570;&#x636E;</li>
+<li>Filter data by query&#xFF1A; &#x5F53;&#x4E00;&#x4E2A;&#x56FE;&#x8868;&#x9762;&#x7248;&#x6709;&#x591A;&#x4E2A;query&#x7ED3;&#x679C;&#x5C55;&#x793A;&#x65F6;&#xFF0C;&#x7528;&#x6765;&#x9009;&#x62E9;&#x9700;&#x8981;&#x5C55;&#x793A;&#x7684;&#x5B57;&#x6BB5;</li>
+<li>Filter data by value&#xFF1A; &#x6839;&#x636E;&#x503C;&#x505A;&#x7B5B;&#x9009;&#xFF0C;&#x53C2;&#x8003;Excel&#x7B5B;&#x9009;&#x5668;</li>
+<li>Group by&#xFF1A; &#x6B64;&#x8F6C;&#x6362;&#x6309;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x6BB5;(&#x5217;)&#x503C;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5206;&#x7EC4;&#xFF1B;&#x4E4B;&#x540E;&#x5BF9;&#x6BCF;&#x7EC4;&#x6570;&#x636E;&#x505A;&#x8FD0;&#x7B97;</li>
+<li>Join by field&#xFF1A; &#x6839;&#x636E;&#x76F8;&#x540C;&#x5B57;&#x6BB5;&#x505A;&#x805A;&#x5408;&#xFF08;&#x8868;&#x8FDE;&#x63A5;&#xFF09;</li>
+<li>Join by labels&#xFF1A; &#x5C06;&#x5E26;&#x6807;&#x7B7E;&#x7684;&#x7ED3;&#x679C;&#x5C55;&#x793A;&#x5230;&#x7531;&#x6807;&#x7B7E;&#x8FDE;&#x63A5;&#x7684;&#x8868;&#x4E2D;</li>
+<li>Grouping to matrix&#xFF1A; &#x5C06;&#x4E09;&#x4E2A;&#x5B57;&#x6BB5;&#x7EC4;&#x5408;&#x6210;&#x4E00;&#x4E2A;&#x77E9;&#x9635;</li>
+<li>Merge&#xFF1A; &#x5408;&#x5E76;&#x591A;&#x4E2A;&#x67E5;&#x8BE2;&#x5230;&#x4E00;&#x8D77;&#x5C55;&#x793A;</li>
+<li>Histogram&#xFF1A; &#x6839;&#x636E;&#x8F93;&#x5165;&#x6570;&#x636E;&#x8BA1;&#x7B97;&#x76F4;&#x65B9;&#x56FE;</li>
+<li>Sort by&#xFF1A; &#x6392;&#x5E8F;</li>
+<li>Organize fields&#xFF1A; &#x5141;&#x8BB8;&#x7528;&#x6237;&#x91CD;&#x65B0;&#x6392;&#x5E8F;&#x3001;&#x9690;&#x85CF;&#x6216;&#x91CD;&#x547D;&#x540D;&#x5B57;&#x6BB5;/&#x5217;&#xFF0C;&#x53EA;&#x80FD;&#x7528;&#x4E8E;&#x5355;&#x4E2A;&#x67E5;&#x8BE2;&#x7684;&#x9762;&#x677F;</li>
+<li>Partition by values&#xFF1A;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5B57;&#x6BB5;&#x4E2D;&#x7684;&#x552F;&#x4E00;/&#x679A;&#x4E3E;&#x503C;&#x8FDB;&#x884C;&#x5206;&#x533A;</li>
+<li>Rename by regex&#xFF1A; &#x4F7F;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x548C;&#x66FF;&#x6362;&#x6A21;&#x5F0F;&#x91CD;&#x547D;&#x540D;&#x90E8;&#x5206;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;</li>
+<li>Reduce&#xFF1A; &#x538B;&#x7F29;&#x5B57;&#x6BB5;</li>
+<li>ser</li>
+</ol>
+</li>
+<li><p>&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#x76D1;&#x63A7;&#x7528;&#x5F97;&#x8F83;&#x591A;&#x7684;&#x65B9;&#x6CD5;&#x662F;&quot;USE&quot;&#x65B9;&#x6CD5;&#xFF0C;&#x5206;&#x522B;&#x8868;&#x793A;&#x4E3A;&#xFF1A;Utilization&#xFF08;&#x4F7F;&#x7528;&#x7387;&#xFF09;&#x3001;Saturation&#xFF08;&#x9971;&#x548C;&#x5EA6;&#xFF09;&#x3001;Errors&#xFF08;&#x9519;&#x8BEF;&#x6570; &#xFF09;</p>
+</li>
+</ol>
+<hr>
+<h2 id="&#x4F7F;&#x7528;&#x6280;&#x5DE7;">&#x4F7F;&#x7528;&#x6280;&#x5DE7;</h2>
+<p>1 . &#x94FE;&#x5F0F;&#x53D8;&#x91CF;</p>
+<pre><code>&#x8BBE;&#x7F6E;dashboard&#x53D8;&#x91CF;
+&#x539F;&#x5219;&#xFF1A; &#x53D8;&#x91CF;&#x4EFB;&#x610F;&#x8BBE;&#x7F6E;&#xFF0C;&#x4F46;&#x662F;&#x90FD;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x67E5;&#x8BE2;&#x5F97;&#x5230;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x6709;&#x76F8;&#x5E94;&#x6807;&#x7B7E;&#x503C;
+      &#x5B9A;&#x4E49;&#x548C;&#x4F7F;&#x7528;&#x65F6;&#x90FD;&#x53EF;&#x4EE5;&#x7ED3;&#x5408;&#x6B63;&#x5219;&#xFF0C;&#x5229;&#x4E8E;&#x5B9E;&#x73B0;&#x7B5B;&#x9009;&#x548C;&#x67E5;&#x8BE2;
+      &#x9700;&#x8981;&#x5EFA;&#x7ACB;&#x5C42;&#x7EA7;&#x548C;&#x4E0B;&#x94BB;&#x5173;&#x7CFB;&#xFF0C;&#x9700;&#x8981;&#x4E66;&#x5199;&#x65F6;&#x5EFA;&#x7ACB;
+
+label_values(up{origin_prometheus=~&quot;$origin_prometheus&quot;},job)
+label_values(up{origin_prometheus=~&quot;$origin_prometheus&quot;,job=~&quot;.*$department.*&quot;},job)
+label_values(up{origin_prometheus=~&quot;$origin_prometheus&quot;,job=~&quot;$job&quot;},instance)
+</code></pre><p>2 . data link </p>
+<pre><code>&#x5728;&#x67D0;&#x5217;&#x503C;&#x6216;&#x8005;&#x67D0;&#x4E2A;pannel&#xFF0C;&#x6DFB;&#x52A0;link
+&#x590D;&#x5236;&#x76EE;&#x6807;dashboard&#x7684;url,&#x5E76;&#x7F16;&#x8F91;URL&#xFF1B;&#x4E3B;&#x8981;&#x5185;&#x5BB9;(&amp;var-variables=${__data.fields.instance})----(&#x4F5C;&#x7528;&#xFF1A;&#x5C06;&#x70B9;&#x51FB;&#x7684;instance&#x7684;&#x503C;&#x4F20;&#x9012;&#x7ED9;&#x8BE5;dashboard&#x7684;&#x53D8;&#x91CF;)
+&#x8F93;&#x5165;$ &#x53EF;&#x4EE5;&#x63D0;&#x793A;&#x53D8;&#x91CF;&#x586B;&#x5199;
+</code></pre><hr>
+<h3 id="&#x7CFB;&#x7EDF;"><strong>&#x7CFB;&#x7EDF;</strong></h3>
+<p>1
+<img src="attachments/Pasted%20image%2020230512172201.png" alt="">
+2</p>
+<h2 id=""><img src="attachments/Pasted%20image%2020230512174628.png" alt=""></h2>
+<h2 id="&#x81EA;&#x5B9A;&#x4E49;&#x9879;&#x76EE;">&#x81EA;&#x5B9A;&#x4E49;&#x9879;&#x76EE;</h2>
+<p><strong>NOTE:</strong>
+install node_exporter--&gt; systemd &#x7BA1;&#x7406; (.service&#x6587;&#x4EF6;)--&gt;ExecStart=   --collector.textfile.directory=/   --&gt; systemctl daemon-reload  &amp;&amp; restart node_exporter --&gt; &#x7F16;&#x5199;&#x811A;&#x672C;&#x6536;&#x96C6;&#x6307;&#x6807;&#x6570;&#x636E; --&gt; install &quot;sponge&quot; --&gt;crontab -e  --&gt;  <em> </em> <em> </em> <em>  | sponge    /.\</em>/textfile/name.prom --&gt; &#x4F7F;&#x7528;
+sponge &#x547D;&#x4EE4;&#x6765;&#x81EA;moreutilst &#x5DE5;&#x5177;&#x96C6;&#xFF0C;&#x9700;&#x8981;apt-get  install  *&#xFF08;&#x4F5C;&#x7528;&#xFF1A;&#x4ECE;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x5E76;&#x8FFD;&#x52A0;&#x91CD;&#x5B9A;&#x5411;&#x8F93;&#x51FA;&#xFF0C;&#x548C;&#x7BA1;&#x9053;&#x7B26;&#x914D;&#x5408;&#x4F7F;&#x7528;&#xFF0C;&#x6B64;&#x547D;&#x4EE4;&#x4F1A;&#x907F;&#x514D;&#x56E0;&#x4E3A;&#x8F93;&#x51FA;&#x8FC7;&#x5927;&#x5BFC;&#x81F4;&#x5185;&#x5B58;&#x548C;&#x78C1;&#x76D8;&#x4E0D;&#x8DB3;&#xFF09;   </p>
+<h1 id="binbash">/bin/bash</h1>
+<hr>
+<h3 id="original">original</h3>
+<p>1 . &#x6587;&#x4EF6;&#x5939;&#x5927;&#x5C0F;--GitHub</p>
+<pre><code>#!/bin/sh
+# Usage: add this to crontab:
+#
+# */5 * * * *  directory_size.sh /var/lib/prometheus | sponge /var/lib/node_exporter/textfile/directory_size.prom
+
+echo &quot;# HELP node_directory_size_bytes Disk space used by some directories&quot;
+echo &quot;# TYPE node_directory_size_bytes gauge&quot;
+
+dir=&quot;$1&quot;
+for directory in $(tree -dfi $dir | head -n -2 | sed &apos;s/\.//g&apos; ); do
+  du --block-size=1 --summarize &quot;$directory&quot; \
+    | sed -ne &apos;s/\\/\\\\/;s/&quot;/\\&quot;/g;s/^\([0-9]\+\)\t\(.*\)$/node_directory_size_bytes{directory=&quot;\2&quot;} \1/p&apos;
+done
+</code></pre><p>2 . &#x76D1;&#x63A7;&#x50F5;&#x5C38;&#x8FDB;&#x7A0B;--process_exporter </p>
+<pre><code>#!/bin/bash
+echo &quot;# HELP Zombie_nums using for counting the numbers of Zombie proccess&quot;
+echo &quot;# TYPE Zombie_nums gauge&quot;
+Zombie_nums=`ps -A -o stat,ppid,pid,cmd | grep -e &apos;^[Zz]&apos; |wc -l`
+echo &quot;Zombie_nums $Zombie_nums&quot;
+</code></pre><p>4 . &#x6587;&#x4EF6;&#x6253;&#x5F00;&#x6570;--process_exporter <a href="https://blog.51cto.com/root/3055821" target="_blank">&#x8FD0;&#x7528;</a></p>
+<pre><code>
+/proc/sys/fs/file-nr                                              # &#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x8868;&#x793A;&#x5DF2;&#x5206;&#x914D;&#x6587;&#x4EF6;&#x53E5;&#x67C4;&#x7684;&#x6570;&#x91CF;
+sudo find /proc -print | grep -P &apos;/proc/\d+/fd/&apos;| wc -l`          # &#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x7CFB;&#x7EDF;&#x4E2D;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x7684;&#x6570;&#x91CF;
+                                                                  process_exporter &#x548C; find &#x67E5;&#x627E;&#x5230;&#x7684;&#x6570;&#x91CF;&#x57FA;&#x672C;&#x4E00;&#x81F4; 
+
+&#x6587;&#x4EF6;&#x53E5;&#x67C4;&#x901A;&#x5E38;&#x662F;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5185;&#x6838;&#x4E2D;&#x7528;&#x4E8E;&#x8868;&#x793A;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x6216;&#x5176;&#x4ED6; I/O &#x8BBE;&#x5907;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x6216;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;&#x5B83;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E9B;&#x6709;&#x5173;&#x8BE5;&#x6587;&#x4EF6;&#x6216;&#x8BBE;&#x5907;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982;&#x6587;&#x4EF6;&#x7684;&#x5927;&#x5C0F;&#x3001;&#x8BBF;&#x95EE;&#x6743;&#x9650;&#x3001;&#x4F4D;&#x7F6E;&#x6307;&#x9488;&#x7B49;&#xFF0C;&#x662F;&#x7528;&#x4E8E;&#x6807;&#x8BC6;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x6216;&#x8BBE;&#x5907;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;
+
+&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x8868;&#x793A;&#x8FDB;&#x7A0B;&#x4E0E;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x3002;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;&#x662F;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x6807;&#x8BC6;&#x8FDB;&#x7A0B;&#x4E2D;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x6216;&#x5176;&#x4ED6; I/O &#x8BBE;&#x5907;&#x7684;&#x62BD;&#x8C61;&#x6982;&#x5FF5;&#x3002;&#x5728; Linux &#x548C;&#x7C7B; Unix &#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;&#x4ECE; 0 &#x5F00;&#x59CB;&#x8BA1;&#x6570;&#xFF08;&#x5728;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5982;&#x7F51;&#x7EDC;&#x5957;&#x63A5;&#x5B57;&#xFF0C;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x8D1F;&#x6570;&#xFF09;&#x3002;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x8868;&#x793A;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x7684; I/O &#x8BBE;&#x5907;&#xFF0C;&#x4F8B;&#x5982;&#x7BA1;&#x9053;&#x3001;&#x5957;&#x63A5;&#x5B57;&#x3001;&#x5B57;&#x7B26;&#x8BBE;&#x5907;&#x3001;&#x5757;&#x8BBE;&#x5907;&#x7B49;&#x3002;
+
+&#x5728;&#x8FDB;&#x7A0B;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4F1A;&#x4E3A;&#x8BE5;&#x6587;&#x4EF6;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x53E5;&#x67C4;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;&#x4F9B;&#x8FDB;&#x7A0B;&#x4F7F;&#x7528;
+</code></pre><p>5 . &#x7AEF;&#x53E3;&#x548C;&#x8FDB;&#x7A0B;&#x76D1;&#x63A7; </p>
+<pre><code>#!/bin/bash
+
+echo &quot;# HELP node_open_ports list the port listened&quot;
+echo &quot;# TYPE node_open_ports gauge&quot;
+
+sudo ss -nltp | awk &apos;/.*:[0-9]+/ {split($4,a,&quot;:&quot;); split($(NF),b,&quot;:&quot;); split(b[2],c,&quot;,&quot;);split(c[2],d,/=/); gsub(&quot;\\(\\(&quot;,&quot;&quot;,c[1]); print &quot;listened_port=\&quot;&quot;a[2]&quot;\&quot;, pid=\&quot;&quot;d[2]&quot;\&quot;, process=&quot;c[1]&quot;&quot;}&apos; | sort | uniq | awk &apos;{gsub(&quot;\\(\\(&quot;,&quot;\&quot;&quot;, $3); print &quot;node_open_ports{&quot;$0&quot;} 1.0&quot;}&apos; | paste -sd &quot;\n&quot; -
+</code></pre><p>6 .  &#x76EE;&#x5F55;&#x5185;&#x6587;&#x4EF6;&#x76D1;&#x63A7;&#xFF08;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x540D;&#xFF09;</p>
+<pre><code>#!/bin/bash
+
+# */5 * * * *  directory_filecheck.sh /path | sponge /var/lib/node_exporter/textfile/directory_file.prom
+
+echo &quot;# HELP node_directory_filecheck used to check the file download by crontab&quot;
+echo &quot;# TYPE node_directory_filecheck gauge&quot;
+dir=&quot;$1&quot;
+weekday=$(date +%u)
+date=$(date +%Y-%m-%d)
+count=$(find $dir -name  &quot;$date*.zip&quot; | wc -l)
+file=$(find $dir -name  &quot;$date*.zip&quot;)
+if [ -z &quot;$file&quot; ]; then
+  file=&quot;$date.zip&quot;
+fi
+if [$weekday  -eq 1 ] &amp;&amp; [$weekday -eq 7]; then
+  echo &quot;node_directory_filecheck{file=\&quot;$file\&quot;,} 3&quot;
+else
+  echo &quot;node_directory_filecheck{file=\&quot;$file\&quot;,} $count&quot; 
+fi
+</code></pre><p>7 .  &#x76EE;&#x5F55;&#x5185;&#x6240;&#x6709;&#x6587;&#x4EF6;</p>
+<pre><code>#/bin/bash 
+
+# */5 * * * *  directory_filelist.sh /path | sponge /var/lib/node_exporter/textfile/directory_size.prom
+
+echo &quot;# HELP node_directory_filelist used to show the file download by crontab&quot;
+echo &quot;# TYPE node_directory_filelist gauge&quot;
+
+dir=&quot;$1&quot;
+tree &quot;$dir&quot;  --timefmt %Y%m%d  -Dsfi | grep -E &apos;*.zip&apos; | awk &apos;{print $NF, $2, $3 }&apos; | sed &apos;s/]//g&apos; | awk &apos;{printf &quot;node_directory_xiangyucheck{fname=\&quot;%s\&quot;, fsize=\&quot;%s\&quot;, fdat=\&quot;%s\&quot;} 1\n&quot;, $1,$2,$3}&apos;
+</code></pre><p>8 . &#x76EE;&#x5F55;&#x4E0B;&#x7684;.zip &#x6587;&#x4EF6;&#x6570;&#x91CF;&#x7EDF;&#x8BA1;</p>
+<pre><code>#!/bin/bash
+# */5 * * * *  /path/directory.sh /path | sponge /path/textfile/directory_size.prom
+echo &quot;# HELP node_directory_filecount used to count file num under monitoring directory&quot;
+echo &quot;# TYPE node_directory_filecount gauge&quot;
+
+dir=&quot;$1&quot;
+for directory in $(tree -dfi $dir | head -n -2 | sed &apos;s/\.//g&apos; ); do
+  zipcount=$(find &quot;$directory&quot; -type f  -name &quot;*.zip&quot; 2&gt;/dev/null | wc -l)
+  echo &quot;node_directory_filecount{directory=\&quot;$directory\&quot;, fcounts=\&quot;$zipcount\&quot;} 1&quot;
+done
+</code></pre><hr>
+<h3 id="final">FINAL</h3>
+<pre><code>#!/bin/bash
+# &#x6307;&#x5B9A;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x8BA1;&#x6570;
+# */1 * * * *  /bin/bash  /path/directory_xycount.sh  /path  | sponge /path/textfile/directory_xycount.prom
+
+echo &quot;# HELP node_directory_xycount used to count file num under monitoring directory&quot;
+echo &quot;# TYPE node_directory_xycount gauge&quot;
+
+weekday=$(date +%u)
+date=$(date &apos;+%Y%m%d&apos; -d &apos;-1day&apos;)
+if [ -d &quot;$1/$date&quot; ]; then
+  for directory in $(tree -dfi &quot;$1/$date&quot; | head -n -2 | sed &apos;s/\.//g&apos; ); do
+    zipcount=$(find &quot;$directory&quot; -type f  -name &quot;*.zip&quot; 2&gt;/dev/null | wc -l)
+    echo &quot;node_directory_xycount{directory=\&quot;$directory\&quot;, weekday=\&quot;$weekday\&quot;, fcounts=\&quot;$zipcount\&quot;} 1&quot;
+  done
+else
+  echo &quot;node_directory_xycount{directory=\&quot;$1/$date\&quot;, weekday=\&quot;$weekday\&quot;,fcounts=\&quot;\&quot;} 0&quot;
+fi
+</code></pre><pre><code>#!/bin/bash
+# &#x6307;&#x5B9A;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x8BA1;&#x6570;
+# ivol: */1 * * * * /bin/bash  /path/directory_ivolcount.sh  /path  | sponge /path/textfile/directory_ivolcount.prom
+
+echo &quot;# HELP node_directory_ivolcount used to count file num under monitoring directory&quot;
+echo &quot;# TYPE node_directory_ivolcount gauge&quot;
+
+weekday=$(date +%u)
+if [ -d &quot;$1&quot; ]; then
+  for directory in $(tree -dfi $1 | head -n -2 | sed &apos;s/\.//g&apos; ); do
+    zipcount=$(find &quot;$directory&quot; -type f  -name &quot;*.zip&quot; 2&gt;/dev/null | wc -l)
+    echo &quot;node_directory_ivolcount{directory=\&quot;$directory\&quot;, weekday=\&quot;$weekday\&quot;, fcounts=\&quot;$zipcount\&quot;} 1&quot;
+  done
+else
+  echo &quot;node_directory_ivolcount{directory=\&quot;$1\&quot;, weekday=\&quot;$weekday\&quot;,fcounts=\&quot;\&quot;} 0&quot;
+fi
+</code></pre><pre><code>#!/bin/sh
+# &#x6307;&#x5B9A;&#x76EE;&#x5F55;&#x7684;&#x76EE;&#x5F55;&#x5927;&#x5C0F;
+# xy: */1 * * * * /bin/bash  /path/directory_xysize.sh  /path  | sponge /path/textfile/directory_xysize.prom
+
+echo &quot;# HELP node_directory_xysize_bytes Disk space used by some directories&quot;
+echo &quot;# TYPE node_directory_xysize_bytes gauge&quot;
+
+weekday=$(date +%u)
+date=$(date &apos;+%Y%m%d&apos; -d &apos;-1day&apos;)
+if [ -d &quot;$1/$date&quot; ]; then
+  for directory in $(tree -dfi &quot;$1/$date&quot; | head -n -2 | sed &apos;s/\.//g&apos; ); do
+    du --block-size=1 --summarize &quot;$directory&quot; \
+          | sed -ne &apos;s/\\/\\\\/;s/&quot;/\\&quot;/g;s/^\([0-9]\+\)\t\(.*\)$/node_directory_xysize_bytes{directory=&quot;\2&quot;,weekday=&quot;&apos;$weekday&apos;&quot;} \1/p&apos;
+  done
+else
+  echo &quot;node_directory_xysize_bytes{directory=\&quot;$1/$date\&quot;,weekday=\&quot;$weekday\&quot;} 0&quot;
+fi
+</code></pre><pre><code>#!/bin/bash
+# &#x6307;&#x5B9A;&#x76EE;&#x5F55;&#x7684;&#x76EE;&#x5F55;&#x5927;&#x5C0F;
+# ivol: */1 * * * * /bin/bash /path/directory_ivolsize.sh  /path  | sponge /path/textfile/directory_ivolsize.prom
+
+echo &quot;# HELP node_directory_ivolsize_bytes Disk space used by some directories&quot;
+echo &quot;# TYPE node_directory_ivolsize_bytes gauge&quot;
+
+weekday=$(date +%u)
+if [ -d &quot;$1&quot; ]; then
+  for directory in $(tree -dfi $1 | head -n -2 | sed &apos;s/\.//g&apos; ); do
+    du --block-size=1 --summarize &quot;$directory&quot; \
+          | sed -ne &apos;s/\\/\\\\/;s/&quot;/\\&quot;/g;s/^\([0-9]\+\)\t\(.*\)$/node_directory_ivolsize_bytes{directory=&quot;\2&quot;,weekday=&quot;&apos;$weekday&apos;&quot;} \1/p&apos;
+  done
+else
+  echo &quot;node_directory_ivolsize_bytes{directory=\&quot;$1\&quot;,weekday=\&quot;$weekday\&quot;} 0&quot;
+fi
+</code></pre><pre><code>#/bin/bash 
+# &#x6307;&#x5B9A;&#x76EE;&#x5F55;&#x7684;&#x6587;&#x4EF6;&#x4FE1;&#x606F;&#x5217;&#x8868;
+# */1 * * * *  /bin/bash /path/pathdirectory_xylist.sh /path | sponge /path/textfile/directory_xylist.prom
+
+echo &quot;# HELP node_directory_xylist used to show the file download by crontab&quot;
+echo &quot;# TYPE node_directory_xylist gauge&quot;
+
+weekday=$(date +%u)
+date=$(date &apos;+%Y%m%d&apos; -d &apos;-1day&apos;)
+
+if [ -d &quot;$1/$date&quot; ]; then
+  tree &quot;$1/$date&quot; --timefmt %Y%m%d -Dsfi | grep -E &apos;*.zip&apos;  \
+    | awk -v weekday=&quot;$weekday&quot; &apos;{date=substr($NF, length($NF)-11, 8); printf &quot;node_directory_xylist{weekday=\&quot;%s\&quot;,fname=\&quot;%s\&quot;,fsize=\&quot;%s\&quot;,fdat=\&quot;%s\&quot;} 1\n&quot;, weekday, $NF, $2, date}&apos;
+else
+  echo &quot;node_directory_xylist{weekday=\&quot;$weekday\&quot;,fname=\&quot;$1/$date\&quot;,fsize=\&quot;\&quot;,fdat=\&quot;\&quot;} 0&quot;
+fi
+</code></pre><pre><code>#/bin/bash 
+# &#x6307;&#x5B9A;&#x76EE;&#x5F55;&#x7684;&#x6587;&#x4EF6;&#x4FE1;&#x606F;&#x5217;&#x8868;
+# */1 * * * *  /bin/bash  /path/pathdirectory_ivollist.sh /path | sponge /path/textfile/directory_ivollist.prom
+
+echo &quot;# HELP node_directory_ivollist used to show the file download by crontab&quot;
+echo &quot;# TYPE node_directory_ivollist gauge&quot;
+
+weekday=$(date +%u)
+
+if [ -d &quot;$1&quot; ]; then
+  tree &quot;$1&quot; --timefmt %Y%m%d -Dsfi | grep -E &apos;*.zip&apos; | awk &apos;{date=substr($NF, length($NF)-11, 8); print $NF, $2, date}&apos; | sort -k3 -r \
+    | awk -v weekday=&quot;$weekday&quot; &apos;{printf &quot;node_directory_ivollist{weekday=\&quot;%s\&quot;,fname=\&quot;%s\&quot;,fsize=\&quot;%s\&quot;,fdat=\&quot;%s\&quot;} 1\n&quot;, weekday, $1, $2, $3}&apos;
+else
+  echo &quot;node_directory_ivollist{weekday=\&quot;$weekday\&quot;,fname=\&quot;$1\&quot;,fsize=\&quot;\&quot;,fdat=\&quot;\&quot;} 0&quot;
+fi
+</code></pre><pre><code>&#x4E0D;&#x4F7F;&#x7528;
+#/bin/bash 
+# &#x6307;&#x5B9A;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x5927;&#x5C0F;
+# */1 * * * * /bin/bash /path/directory_ivolzip.sh  /path | sponge /path/textfile/directory_ivolzip.prom
+
+echo &quot;# HELP node_directory_ivolzip used to show the file download by crontab&quot;
+echo &quot;# TYPE node_directory_ivolzip gauge&quot;
+
+date=arraystream_$(date &apos;+%Y%m%d&apos; -d &apos;-1day&apos;).zip
+if [ -e &quot;$1/$date&quot; ]; then
+  ls -l &quot;$1/$date&quot; | awk &apos;{printf &quot;node_directory_ivolzip{fname=\&quot;%s\&quot;} %s\n&quot;, $9, $5}&apos;
+else
+  echo &quot;node_directory_ivolzip{fname=\&quot;$1/$date\&quot;} 0&quot;
+fi
+</code></pre><hr>
+<h2 id="processexporter">Process_exporter</h2>
+<p>1 . <a href="https://github.com/ncabatoff/process-exporter/releases" target="_blank">&#x7248;&#x672C;&#x5730;&#x5740;</a></p>
+<p>2 . &#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x76D1;&#x63A7;&#x5168;&#x90E8;&#x8FDB;&#x7A0B;</p>
+<pre><code>process_names:
+  - name: &quot;{{.Comm}}&quot;
+    cmdline:
+    - &apos;.+&apos;
+</code></pre><p>3 . systemd &#x7BA1;&#x7406;</p>
+<pre><code>vim  /etc/systemd/system/process_exporter.service 
+[Unit]
+Description=process_exporter
+Documentation=https://prometheus.io/
+After=network.target
+[Service]
+Type=simple
+ExecStart=/home/inboc/demo/process_exporter/process-exporter -config.path=/home/inboc/demo/process_exporter/conf.yml
+Restart=on-failure
+[Install]
+WantedBy=multi-user.target
+
+systemctl daemon-reload
+systemctl start process_exporter.service   &amp;&amp;   systemctl enabled process_exporter.service
+</code></pre><p>4 . prometheus &#x65B0;&#x589E;job</p>
+<pre><code>scrape_configs:
+  - job_name: &quot;prometheus&quot;
+    static_configs:
+      - targets: [&quot;10.13.3.109:9090&quot;]
+  - job_name: &quot;node_exporter&quot;
+    static_configs:
+      - targets: [&quot;10.13.3.110:9100&quot;]
+  - job_name: &apos;process_exporter&apos;
+    static_configs:
+    - targets: [&apos;10.13.3.110:9256&apos;]
+</code></pre><p>5 . prometheus&#x91CD;&#x8F7D;</p>
+<pre><code>curl -X POST http://ADDRESS:9090/-/reload
+</code></pre><hr>
+<h2 id="&#x5BFC;&#x51FA;dashboard">&#x5BFC;&#x51FA;dashboard</h2>
+<p>1 . dadasource&#x53D8;&#x91CF;&#xFF0C;&#x521B;&#x5EFA;&#x4E3A;DataSource  &#x7C7B;&#x578B;  &#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;pannel&#x4E2D;&#x7684;&#x6570;&#x636E;&#x6E90;&#x9009;&#x62E9;&#x4E3A;$datasource&#xFF0C;&#x907F;&#x514D;&#x6570;&#x636E;&#x6E90;&#x4E0D;&#x80FD;&#x8BC6;&#x522B;</p>
+<h2 id="2--share--export--json-file">2 . share--&gt;export--&gt;json file</h2>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="readme.html" class="navigation navigation-prev " aria-label="Previous page: Monitor">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="section2.html" class="navigation navigation-next " aria-label="Next page: Alert TTS">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"grafana+prometheus basic points","level":"1.11.1","depth":2,"next":{"title":"Alert TTS","level":"1.11.2","depth":2,"path":"Monitor/section2.md","ref":"Monitor/section2.md","articles":[]},"previous":{"title":"Monitor","level":"1.11","depth":1,"path":"Monitor/readme.md","ref":"Monitor/readme.md","articles":[{"title":"grafana+prometheus basic points","level":"1.11.1","depth":2,"path":"Monitor/section1.md","ref":"Monitor/section1.md","articles":[]},{"title":"Alert TTS","level":"1.11.2","depth":2,"path":"Monitor/section2.md","ref":"Monitor/section2.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Monitor/section1.md","mtime":"2023-10-06T03:15:10.452Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-10-06T05:10:03.099Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

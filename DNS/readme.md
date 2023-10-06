@@ -1,0 +1,1 @@
+bind9 自建dns服务器，实现主从同步，使用webmin工具图形化，并nginx反向代理webmin
