@@ -1,10 +1,10 @@
 # Harvester
 
-1 .1  iso install  
-	map iso device
-	select Next Boot on viirtual iso
-	restart sys
-	some important configuration during installlation
+1.1  iso install  
+	- map iso device
+	- select Next Boot on viirtual iso
+	- restart sys
+	- some important configuration during installlation
 	- nic ip： 172.16.22.228
 	- vlan：1622
 	- virtual ip：dhcp  or static--172.16.22.50
@@ -24,7 +24,7 @@
 
 1.3 install pre-version: 1.2
 	- vip unavaliable（dhcp & static）& setting up status  
-	 ![|900](attachments/url-unavailable.png)
+	 ![|900](attachments/url-unavailable.png)  
 	Note：  发现可以访问node ip 进入Web UI
 
 2 . 平台使用  
