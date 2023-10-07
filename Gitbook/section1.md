@@ -1,9 +1,9 @@
 
-0. 环境
-	centos7 香港 ip, 1G mem，安装有 gitbook
-	gitbook workspace pull from github repo，and push to github
-	laptop installed vscode， using the extension remote-ssh
-	gitbook 利用 github 发布
+0. 环境  
+	centos7 香港 ip, 1G mem，安装有 gitbook  
+	gitbook workspace pull from github repo，and push to github  
+	laptop installed vscode， using the extension remote-ssh  
+	gitbook 利用 github 发布  
 # 1. 安装node.js
 ```
 wget https://nodejs.org/dist/v12.16.1/node-v12.16.1-linux-x64.tar.xz

@@ -4,10 +4,10 @@
 
 ------------------
 # 一、DNS 主服务器
+[references](https://cshihong.github.io/2018/10/15/DNS%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%85%8D%E7%BD%AE/)
 ```
 sudo apt install -y  bind9 bind9-utils
 ```
-[references](https://cshihong.github.io/2018/10/15/DNS%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%85%8D%E7%BD%AE/)
 ## 1.1 相关文件
 `/etc/bind/named.conf`:  主配置文件，包含 bind 服务器的全局设置和引用其他配置文件的指令
 `/etc/bind/named.conf.default-zones`:  定义了默认的区域（zone），如  localhost 、反向解析等
@@ -32,17 +32,17 @@ sudo apt install -y  bind9 bind9-utils
 - TXT 记录： 指某个主机名或域名的说明，通常用来做SPF记录（反垃圾邮件）
 
 ### 1.2.3  目录结构
-.
-├── bind.keys
-├── inboc
-│   ├── db.zones
-│   └── zones
-├── named.conf
-├── named.conf.default-zones
-├── named.conf.local
-├── named.conf.options
-├── rndc.key
-└── zones.rfc1918
+.  
+├── bind.keys  
+├── inboc  
+│   ├── db.zones  
+│   └── zones  
+├── named.conf  
+├── named.conf.default-zones  
+├── named.conf.local  
+├── named.conf.options  
+├── rndc.key  
+└── zones.rfc1918  
 ### 1.2.4  配置文件
 ```
 /etc/bind/named.conf                           # 可删除
