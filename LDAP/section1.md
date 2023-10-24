@@ -1056,6 +1056,7 @@ slapadd -n 1 -F /etc/openldap/slapd.d -l ./data.2021-09-18.ldif
       例子
        ldapadd -x -D "cn=root,dc=starxing,dc=com" -w secret -f /root/test.ldif  
        ldapadd -x -D "cn=root,dc=starxing,dc=com" -w secret (这样写就是在命令行添加条目)  
+
        
 > ldapsearch  
       -x   进行简单认证  
@@ -1099,7 +1100,8 @@ slapadd -n 1 -F /etc/openldap/slapd.d -l ./data.2021-09-18.ldif
        New password:  
        Re-enter new password:  
        就可以更改密码了，如果原来记录中没有密码，将会自动生成一个userPassword。  
-    
+  
+  
 > ldapmodify  
      -a 添加新的条目.缺省的是修改存在的条目.  
      -C 自动追踪引用.  
