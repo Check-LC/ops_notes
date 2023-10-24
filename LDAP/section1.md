@@ -251,30 +251,30 @@ apt-get install ldap-account-manager
 ```
 访问 http://ip/lam ，lam的所有配置都可以在web端配置，不需要去服务器上修改一行代码
 
-### 3.1.1 LAM configuration
+### 3.1.1 LAM configuration  
 ![](attachments/Pasted%20image%2020230824104230.png)
-### 3.1.2  Profile Setting
+### 3.1.2  Profile Setting  
 ![](attachments/Pasted%20image%2020230824110401.png)
-- Edit general settings 来编辑通用配置，**默认密码 lam**，进入之后能配置证书
+- Edit general settings 来编辑通用配置，**默认密码 lam**，进入之后能配置证书  
 ![1200](attachments/lam2.png)
 
 - Edit server profiles 来编辑服务器配置，最好先编辑服务器配置
 - Security settings，管理登录用户，可以是固定的DN列表，也可以是LAM可以搜索LDAP以查找与给定用户名匹配的DN
 - Note：
   未加密的LDAP连接或TLS加密连接使用ldap：//  ( 通过端口389连接)。
-  LDAP+SSL（LDAPS）加密连接使用ldaps：//   (636)。TLS不能与ldaps：//组合使用。
+  LDAP+SSL（LDAPS）加密连接使用ldaps：//   (636)。TLS不能与ldaps：//组合使用。  
 ![](attachments/lam1.png)
 
 
 
 
-- 显示的标签，二者均保留可以正常使用 tree view进行编辑
+- 显示的标签，二者均保留可以正常使用 tree view进行编辑  
 ![|1200](attachments/2023-08-24.png)
 
-- 控制账户类显示的模块
+- 控制账户类显示的模块  
 ![1200](attachments/lam3.png)
 
-- "Models setting" 页面配置 该记录需要的具体信息，勾选剔除
+- "Models setting" 页面配置 该记录需要的具体信息，勾选剔除  
 ![1200](attachments/lam4.png)
 
 - tree view编辑更高效
@@ -491,7 +491,7 @@ ldapadd -Y EXTERNAL -H ldapi:/// -f mirrorsync.ldif
 （自签名证书加密连接 nextcloud 失败，考虑采用 权威证书或stunnel）
 
 ## 5.1 CA中心创建证书
-	此时使用LDAP 主服务器 作为 CA 中心，自签名
+- 此时使用LDAP 主服务器 作为 CA 中心，自签名
 - 安装 gnutls-bin 和 ssl-cert 包
 ```
 sudo apt install gnutls-bin ssl-cert
@@ -758,12 +758,13 @@ sudo ldapadd  -Y   EXTERNAL  -H  ldapi:///   -f    certinfo.ldif
 
 ## 5.5 使用 nextcloud 测试加密连接
 
-- docker 安装 nexcloud，登录 UI ，点击账户，选择应用
+- docker 安装 nexcloud，登录 UI ，点击账户，选择应用  
 ![|800](attachments/nexcloud-app-setup.png)
 
-- 开启 LDAP 集成
+- 开启 LDAP 集成  
 ![|800](attachments/LDAP-upload.png)
-- 设置连接
+
+- 设置连接  
 ![|800](attachments/linkon.png)
 
 - ldaps连接(严格一致才是tls加密，nextcloud应该只信任权威证书)
@@ -1126,15 +1127,15 @@ slapadd -n 1 -F /etc/openldap/slapd.d -l ./data.2021-09-18.ldif
 
 
 # 八、 参考链接
-[指南](https://github.com/jt6562/LDAP-read-notes/blob/master/ldap-guide/OpenLDAP%E7%AE%A1%E7%90%86%E5%91%98%E6%89%8B%E5%86%8C.md)
-[知识总结](https://www.cnblogs.com/kevingrace/p/5773974.html)
-[参考1](https://www.cnblogs.com/js1314/p/12887893.html)
-[参考2](https://cloud.tencent.com/developer/article/1932586)
-[参考3](https://blog.csdn.net/u011607971/article/details/121126289?spm=1001.2014.3001.5501#t3)
-[Ubuntu wiki](https://ubuntu.com/server/docs/service-ldap-with-tls)
-[tls参考1](https://www.cnblogs.com/shu-sheng/p/14450815.html)
-[tls参考2](https://hmli.ustc.edu.cn/doc/linux/ubuntu-ldap/ubuntu-ldap.html#id14)
-[tls参考3](https://zhuanlan.zhihu.com/p/643010354)
+[指南](https://github.com/jt6562/LDAP-read-notes/blob/master/ldap-guide/OpenLDAP%E7%AE%A1%E7%90%86%E5%91%98%E6%89%8B%E5%86%8C.md)  
+[知识总结](https://www.cnblogs.com/kevingrace/p/5773974.html)  
+[参考1](https://www.cnblogs.com/js1314/p/12887893.html)  
+[参考2](https://cloud.tencent.com/developer/article/1932586)  
+[参考3](https://blog.csdn.net/u011607971/article/details/121126289?spm=1001.2014.3001.5501#t3)  
+[Ubuntu wiki](https://ubuntu.com/server/docs/service-ldap-with-tls)  
+[tls参考1](https://www.cnblogs.com/shu-sheng/p/14450815.html)  
+[tls参考2](https://hmli.ustc.edu.cn/doc/linux/ubuntu-ldap/ubuntu-ldap.html#id14)  
+[tls参考3](https://zhuanlan.zhihu.com/p/643010354)  
 # 九、问题：
 ## 9.1 从服务器同步不及时，必须手动刷新，网络和ubuntu配置同样结果
 ## 9.2 日志功能开启失败
@@ -1461,6 +1462,6 @@ olcAccess: {0}to attrs=userPassword by self write by anonymous auth by * none
 olcAccess: {1}to attrs=shadowLastChange by self write by * read
 olcAccess: {2}to dn.subtree="dc=example,dc=net" by dn.base="cn=reader,dc=test,dc=com" read
 ```
-- 连接 acl 之后的过滤案例
-'(&(objectclass=inetorgperson)(|(cn=x.z)(cn=z.z))'  过滤出指定用户----在用户模式设置。
+- 连接 acl 之后的过滤案例  
+'(&(objectclass=inetorgperson)(|(cn=x.z)(cn=z.z))'  过滤出指定用户----在用户模式设置。  
 '(&(objectclass=groupOfNames)(|(cn=example-sys-junior)(cn=example-sys-admin)))' 过滤指定组----在组模式设置（在ldap中创建的组 objectclass 是groupOfNames，利用的是memberof属性）
